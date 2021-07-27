@@ -1,0 +1,61 @@
+#add{
+    background-color:black;
+    color:white;
+    height:40px;
+    
+}
+
+#input-task{
+    height:40px;
+}
+#not-completed,#completed{
+    list-style-position: inside;
+}
+.not-completed-task,.completed-task{
+    border-radius: 10px;
+    text-align: center;
+    color:black;
+    font-weight: 600;
+    width:70%;
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color:white;    
+    font-size: 20px;
+}
+.icons{
+    padding:5px;
+    margin-left: 7px;
+    font-size: 25px;
+    background-color: transparent;
+    border:unset;
+    color:white;
+}
+.not-completed-task{
+    background-color: red;
+}
+.completed-task{
+background-color: green;    
+}
+/*styling the numbers of the order list*/
+ol {
+list-style: none;
+}
+ol li{
+    counter-increment: step-counter;
+
+}
+ol li::before {
+    content: counter(step-counter);
+    background-color:navy;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin-right: 10px;
+  }
