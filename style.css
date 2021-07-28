@@ -16,7 +16,6 @@
     text-align: center;
     color:black;
     font-weight: 600;
-    width:70%;
     margin: auto;
     align-items: center;
     margin-top: 20px;
@@ -49,7 +48,6 @@ list-style: none;
 }
 ol li{
     counter-increment: step-counter;
-
 }
 ol li::before {
     content: counter(step-counter);
