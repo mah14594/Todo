@@ -4,15 +4,23 @@ for (i=0; i<item.length; i++){
 }
 document.getElementById("add").disabled=true;
 document.getElementById("input-task").addEventListener("keyup",function(){
-    if (document.getElementById("input-task").value.length>2){
+    var in1=document.getElementById("input-task").value;
+    
+    if (in1.length>3){
         document.getElementById("add").disabled=false;
     }
     else {
         document.getElementById("add").disabled=true;
 
     }
+   
+   
 }
 )
+
+
+
+
 document.getElementById("add").addEventListener("click",function(){
     var in1=document.getElementById("input-task").value; //taking value from the input
     var li= document.createElement("li");  //create list element
