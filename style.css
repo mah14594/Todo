@@ -46,6 +46,7 @@ background-color: green;
 /*styling the numbers of the order list*/
 ol {
 list-style: none;
+counter-reset: step;
 }
 ol li{
     counter-increment: step;
